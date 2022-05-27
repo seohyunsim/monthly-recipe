@@ -4,31 +4,28 @@ import styled from "styled-components";
 export const Header = () => {
   return (
     <Wrap>
-      오늘<Title>뭐먹지</Title>?
+      <span>monthly recipe</span>
+      <Title>이 달의 레시피</Title>
     </Wrap>
   );
 };
 
 const Wrap = styled.div`
-  @font-face {
-    font-family: "SANJUGotgam";
-    src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2112@1.0/SANJUGotgam.woff")
-      format("woff");
-    font-weight: normal;
-    font-style: normal;
-  }
-  border: 1px solid;
+  border-bottom: 1px solid #cdcdcd;
   text-align: center;
-  padding: 1em;
-  font-family: "SANJUGotgam";
-  font-size: 30px;
-  display: flex;
-  justify-content: center;
+  padding: 2em 0 1em 0;
+  span {
+    padding: 10px 20px;
+    border-radius: 13px;
+    background-color: #ddb76f58;
+    font-size: 25px;
+    font-family: "Playfair Display", serif;
+    font-weight: 800;
+  }
 `;
 
 const Title = styled.div`
-  font-size: 33px;
-  font-family: "SANJUGotgam";
-  padding-left: 15px;
-  color: #e7bc00dd;
+  font-size: 15px;
+  font-weight: 200;
+  padding-top: 20px;
 `;
