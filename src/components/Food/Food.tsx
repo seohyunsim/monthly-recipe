@@ -7,7 +7,11 @@ export const Food = () => {
 
   useEffect(() => {
     axios
-      .get("http://api.nongsaro.go.kr/service/monthFd/monthFdYearLst")
+      .get("http://api.nongsaro.go.kr/service/monthFd/monthFdYearLst", {
+        params: {
+          apiKey: "20220526MWFCAUTSW87V4TGZPV52MW",
+        },
+      })
       .then((res) => {
         console.log(res);
       });
